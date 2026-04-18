@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>travel blog article page</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="index.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <nav class="navbar">
+            <h3 class="logo">WANDERER</h3>
+            <ul>
+                <li>Destinations</li>
+                <li>Stories</li>
+                <li>About</li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="tag">ADVENTURE</span><br>
+                <h1>Into the Heart of the Alps</h1><br>
+                <p>By Sarah Chen  •  June 12, 2025</p><br>
+            </div>
+        </section>
+        <section class="content">
+            <div class="left">
+                <p class="intro">The trail wound upward through a cathedral of ancient pines, each breath of mountain air carrying the sharp scent of resin and distant snow.</p>
+                <img src="./image/photo6.jfif" class="main-img">
+                <p>Three days above the tree line taught me more about patience than any meditation retreat could.
+                    The mountains don't hurry for anyone — and somehow, neither did I.</p>
+            </div> 
+            
+             <div class="right">
+                <div class="author">
+                    <img src="./image/photo5.jfif">
+                    <h3>Sarah Chen</h3>
+                    <p>Travel writer & photographer exploring the world's wild corners.</p>
+                </div>
+                
+                <div class="tags">
+                    <h4>TAGS</h4>
+                    <span>Alps</span>
+                    <span>Hiking</span>
+                    <span>Solo Travel</span>
+                    <span>Nature</span>
+                    <span>Photography</span>
+                </div>
+            </div>
+        </section>
+
+        <script>
+            document.querySelectorAll(".tags span").forEach(tag => {
+                tag.addEventListener("click", () => {
+                    alert("You clicked: " + tag.innerText);
+                });
+            });
+        </script>
+    </body>
+</html>
